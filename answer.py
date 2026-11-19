@@ -200,7 +200,7 @@ def verify_answer(answer, clauses):
             continue
         no, quote = str(e.get("clause", "")).strip(), _norm(e.get("quote", ""))
         text = _norm(" ".join(c.get("context", c["text"]) for c in clauses if c["clause_no"] == no))
-        if len(quote.split()) >= 4 and quote in text:
+        if len(quote.split()) >= 4 and quote.replace(" ", "") in text.replace(" ", ""):
             good_quotes += 1
         else:
             problems.append(f"quote from clause {no} does not appear in that clause")
