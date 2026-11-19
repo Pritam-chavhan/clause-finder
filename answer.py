@@ -113,23 +113,27 @@ def make_gemini_llm(api_key):
     """Return a function prompt -> text, or raise a clear error."""
     model = pick_gemini_model(api_key)
 
+    fallback = os.environ.get("GEMINI_FALLBACK_MODEL", "gemini-flash-latest")
+    models = [model] + ([fallback] if fallback and fallback != model else [])
+
     def llm(prompt):
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
         body = {"contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {"temperature": 0, "responseMimeType": "application/json"}}
         last = None
-        for attempt in range(int(os.environ.get("GEMINI_RETRIES", "5"))):  # retry timeouts and temporary overload (429/500/503)
-            try:
-                r = requests.post(url, params={"key": api_key}, json=body, timeout=int(os.environ.get("GEMINI_TIMEOUT", "150")))
-            except requests.exceptions.RequestException as e:
-                last = f"{type(e).__name__}: {e}"
-            else:
-                if r.status_code == 200:
-                    return r.json()["candidates"][0]["content"]["parts"][0]["text"]
-                last = f"Gemini API error {r.status_code}: {r.text[:300]}"
-                if r.status_code not in (429, 500, 503):
-                    break
-            time.sleep(min(8 * (2 ** attempt), 60))
+        for m in models:  # if the main model stays overloaded, try the fallback; the same checks apply to either
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
+            for attempt in range(int(os.environ.get("GEMINI_RETRIES", "5"))):  # retry timeouts and temporary overload (429/500/503)
+                try:
+                    r = requests.post(url, params={"key": api_key}, json=body, timeout=int(os.environ.get("GEMINI_TIMEOUT", "150")))
+                except requests.exceptions.RequestException as e:
+                    last = f"{type(e).__name__}: {e}"
+                else:
+                    if r.status_code == 200:
+                        return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+                    last = f"Gemini API error {r.status_code}: {r.text[:300]}"
+                    if r.status_code not in (429, 500, 503):
+                        break
+                time.sleep(min(4 * (2 ** attempt), 30))
         raise RuntimeError(last)
 
     llm.model_name = model
