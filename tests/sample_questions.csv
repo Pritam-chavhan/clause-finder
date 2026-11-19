@@ -1,0 +1,28 @@
+question,correct_clause,qtype
+What is the front margin for residential plots,3.1,exact
+What is the floor space index for residential use,4.2,exact
+What is the maximum ground coverage,4.3,exact
+What is the parking requirement for residential buildings,5.1,exact
+What are the rainwater harvesting requirements,7.1,exact
+What is the validity of development permission,9.3,exact
+How far must I leave open space between the road and my house,3.1,everyday
+How much of the plot can the building cover,4.3,everyday
+How many car spots are needed for a flat building,5.1,everyday
+Is a small provision shop allowed in a residential area,8.1,everyday
+How long does the authority take to approve my plan,9.2,everyday
+Can I build a factory in a housing area,8.2,everyday
+Do I have to collect rain water on a large plot,7.1,everyday
+Can I build my house right up to the edge of my land,3.2,mismatch
+Can I add another floor to my house,4.1,mismatch
+Where does sewage go if there is no public line,7.3,mismatch
+Do I need a lift in a five storey building,6.3,mismatch
+How wide must stairs be in a school,6.1,mismatch
+What fire exit is needed in a tall building,6.2,mismatch
+Parkng space for a shop,5.2,mismatch
+How close can I build to the road,3.1,ambiguous
+How much can I build on my plot,4.2,ambiguous
+What is the income tax rate for salaried employees,,unanswerable
+How do I register a company in India,,unanswerable
+What is the minimum wage for construction workers,,unanswerable
+Which cement brand is best for slabs,,unanswerable
+What is the penalty for building without permission,,unanswerable

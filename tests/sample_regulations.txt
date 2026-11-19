@@ -1,0 +1,48 @@
+SYNTHETIC TEST DATA - invented clauses and numbers used only to test the code. NOT real regulations.
+
+1.1 Short title and commencement
+These example rules may be called the Sample Development Rules and apply to the sample area from the date of notification.
+2.1 Definition of plot
+Plot means a piece of land enclosed by definite boundaries and held under one ownership for construction purposes.
+2.2 Definition of road width
+Road width means the clear width of the public carriageway fronting the plot, measured between the boundaries of the road.
+3.1 Front margin for residential plots
+Every residential plot shall leave an open front margin from the road boundary. For plots up to 100 square metres the front margin is 3.0 metres, and for larger plots it is 4.5 metres.
+3.2 Side and rear margins
+Side margin and rear margin shall be provided on every plot. The rear margin is 3.0 metres and the side margin is 1.5 metres for buildings up to 10 metres in height.
+3.3 Margins for corner plots
+A corner plot shall provide the front margin on both road sides, and the distance from each road boundary shall not be reduced.
+4.1 Maximum height of building
+The height of a building is limited by the width of the road in front of the plot. The building height shall not exceed 1.5 times the road width plus the front margin.
+4.2 Floor space index
+The floor space index (FSI) permitted for residential use is 1.8 for plots on roads of 18 metres and above, and 1.2 for plots on narrower roads.
+4.3 Ground coverage
+Ground coverage, meaning the share of the plot covered by the building at plinth level, shall not exceed 50 percent for residential buildings.
+5.1 Parking requirement for residential buildings
+One car parking space of 2.5 metres by 5.5 metres shall be provided for every 100 square metres of built up area in residential buildings.
+5.2 Parking for commercial buildings
+For commercial buildings one parking space shall be provided for every 50 square metres of built up area, including visitor parking.
+5.3 Basement parking
+Basement may be used for parking and services. The basement ceiling shall be at least 0.9 metres above the average ground level, and ventilation shall be provided.
+6.1 Staircase width
+The minimum width of a staircase in a residential building is 1.0 metre and in a public building is 1.5 metres. Tread shall not be less than 250 millimetres.
+6.2 Fire escape and means of exit
+Buildings above 15 metres in height shall have a fire escape staircase on the outer face and refuge area on alternate floors for safe evacuation.
+6.3 Lift requirement
+A lift shall be provided in every building higher than 13.5 metres. At least one lift shall be able to carry a stretcher.
+7.1 Rainwater harvesting
+Every building on a plot of 500 square metres and above shall provide a rainwater harvesting system with storage to recharge groundwater.
+7.2 Solar water heating
+Residential buildings with more than 4 dwelling units shall install a solar water heating system for common use.
+7.3 Waste water and drainage
+Drainage from the building shall be connected to the public sewer. Where none exists a septic tank with soak pit shall be provided within the plot.
+8.1 Permissible uses in residential zone
+In the residential zone dwelling units, home based professional offices, small shops for daily needs and schools are permitted uses.
+8.2 Prohibited uses in residential zone
+Industrial units, slaughter houses and storage of hazardous materials are not permitted in the residential zone.
+9.1 Application for development permission
+An owner shall apply for development permission to the competent authority with plans, ownership documents and the prescribed fees.
+9.2 Time limit for decision on permission
+The authority shall decide on a complete application within 30 days, otherwise the permission may be deemed granted as per the rules.
+9.3 Validity of permission
+Development permission is valid for three years from the date of issue and may be renewed once for a further period of one year.

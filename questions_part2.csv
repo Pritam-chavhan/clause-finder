@@ -1,0 +1,46 @@
+question,correct_clause,qtype
+What is the road side margin required for a building unit?,6.7.1,exact
+What are the permissible uses in the margin space?,6.7.3,exact
+What is the maximum clear height of a basement?,6.8.3,exact
+Which uses are permitted in a basement?,6.8.4,exact
+What is the minimum area of a building unit for different uses?,6.4,exact
+What is the parking requirement for dwelling units?,6.15,exact
+What is the minimum common plot required for a building unit of 2000 sq.mt or above?,6.17.5,exact
+What are the requirements for fire tender movement?,6.14.3,exact
+What is the minimum plot area for row type buildings?,6.13.1,exact
+How close to my neighbour's boundary can I build?,6.7.2,everyday
+Can I build a garage or servant room in the open space around my house?,6.7.3,everyday
+Can I build a basement under my house?,6.8,everyday
+How tall can my building be on a 12 metre road?,6.6,everyday
+How much total floor area can I build on my plot?,6.3,everyday
+Can I build on a plot that has no road access?,6.5.2,everyday
+Do I need to leave open space inside my building for light and air?,6.16,everyday
+Can I build on land marked as a graveyard?,6.18,everyday
+How small can a plot be for building a house?,6.4,everyday
+Can I add another floor to my existing house?,6.9,everyday
+Can I run a small business from my house?,6.1,everyday
+How many car parking spaces must a new apartment building provide?,6.15,everyday
+What happens to my plot if the road in front is widened?,6.3.3,everyday
+Can I put up a hoarding on my plot?,11.1,everyday
+How much open spce do I need beteen my house and the boundry?,6.7,everyday
+Parkng space needed for a shop,6.15,everyday
+Can I build my house right up to the edge of my land?,6.7,mismatch
+My plot is behind other houses and I cannot reach the road. What can I do?,6.5.2,mismatch
+Is there a minimum gap I must keep between two buildings?,6.7.1,mismatch
+I want to rebuild my 40 year old house on a narrow lane. What are the rules?,6.22,mismatch
+Can I use the space below my building for storing things?,6.8.4,mismatch
+I want to open a petrol pump. Where can it be located?,10,mismatch
+Do tall buildings have to be reachable by fire engines?,6.14.3,mismatch
+What can I build on a plot in the old walled city?,7,mismatch
+Can I build on a plot reserved as a public garden under a town planning scheme?,6.19,mismatch
+How close can I build to the road?,6.7.1,ambiguous
+How high can I build?,6.6,ambiguous
+How much can I build on my plot?,6.3,ambiguous
+How much parking do I need?,6.15,ambiguous
+What is the penalty for building without permission?,,unanswerable
+What documents do I need to apply for building permission?,,unanswerable
+How big should a septic tank be?,,unanswerable
+What is the stamp duty on buying a plot?,,unanswerable
+What is the income tax rate for salaried employees?,,unanswerable
+Which cement grade is best for slabs?,,unanswerable
+What is the minimum wage for construction workers?,,unanswerable
