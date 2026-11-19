@@ -117,3 +117,6 @@ Support more documents and states, handle tables properly, track document versio
 ## API keys
 
 Never commit a key. In Colab, store it under Secrets. Locally, set `GEMINI_API_KEY` as an environment variable.
+## License note
+
+The MIT license covers the code in this repository only. The regulation text in `clauses.jsonl` remains the work of the Government of Gujarat and is reproduced here for research and demonstration, with attribution.
