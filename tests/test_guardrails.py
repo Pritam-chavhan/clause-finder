@@ -173,5 +173,11 @@ check("model returns a JSON list with junk -> llm_error, no crash",
 check("model wraps the object in a one-item list -> still handled",
       _aq(S, Q, llm=lambda p: json.dumps([GOOD]), expand=True, judge=False)["status"] == "answered")
 
+SPLIT = [{"clause_no": "9.9", "text": "Ancillary uses shall have maximum permissible he ight of 3.0 mt s in the side margin."}]
+ANS = {"insufficient": False, "direct_answer": "Yes.", "simple_explanation": "Up to 3.0 metres high.", "evidence": [{"clause": "9.9", "quote": "maximum permissible height of 3.0 mts in the side margin"}], "by_clause": [{"clause": "9.9", "says": "Limit of 3.0 metres in height."}]}
+check("quote still matches when the PDF split a word ('he ight')", verify_answer(ANS, SPLIT) == [])
+BAD = dict(ANS, evidence=[{"clause": "9.9", "quote": "maximum permissible height of 4.0 mts in the side margin"}])
+check("a quote with a changed number is still rejected", any("quote" in p for p in verify_answer(BAD, SPLIT)))
+
 print(f"\n{len(results) - len(failed)}/{len(results)} passed")
 sys.exit(1 if failed else 0)
