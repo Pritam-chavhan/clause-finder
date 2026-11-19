@@ -154,9 +154,13 @@ st.text_area("Your question", key="q", height=90, max_chars=MAX_CHARS, label_vis
 st.button("Find the answer", type="primary", on_click=ask)
 
 st.markdown(
-    '<div class="notice"><b>Please note:</b> this is a prototype. It tested well on some questions and refuses or picks the '
-    "wrong clause on others. It is not legal or engineering advice. Answers take 20-30 seconds. Your question is sent to "
-    "Google's Gemini API to write the answer, so please do not type personal details.</div>",
+    '<div class="notice"><b>What it covers today:</b> this early version is built on a limited set of regulations: '
+    "<b>Gujarat CGDCR 2017, Part II (Planning)</b> only, about 190 indexed passages. More documents and topics are planned. "
+    "If your question is about something that is not loaded yet, the app says it cannot answer instead of guessing, so a "
+    "&ldquo;not enough verified information&rdquo; reply usually means that topic has not been added yet. "
+    "Because this is a prototype, it can still pick a less relevant clause, so please check the original text shown with every answer. "
+    "Not legal or engineering advice. Answers take 20-30 seconds. Your question is sent to Google's Gemini API to write the answer, "
+    "so please do not type personal details.</div>",
     unsafe_allow_html=True,
 )
 
