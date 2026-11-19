@@ -34,7 +34,7 @@ Ask a question the way you would ask a person ("Can I build right up to the edge
 
 ## Live demo
 
-A hosted demo runs on Streamlit Community Cloud (link in the repository description). It limits the AI step per visitor and per hour; past the limit it shows the original clauses without the AI summary. The free host sleeps when unused, so the first visit can take about a minute. The app uses the same MiniLM model through ONNX (`fastembed`) so it fits the free tier; on the 38 answerable questions in the evaluation set it returned the identical top-5 clauses as the sentence-transformers version.
+**Try it: https://clause-finder.streamlit.app** (hosted on Streamlit Community Cloud). It limits the AI step per visitor and per hour; past the limit it shows the original clauses without the AI summary. The free host sleeps when unused, so the first visit can take about a minute. The app uses the same MiniLM model through ONNX (`fastembed`) so it fits the free tier; on the 38 answerable questions in the evaluation set it returned the identical top-5 clauses as the sentence-transformers version.
 
 ## Run it (Colab is easiest: use the notebook)
 
