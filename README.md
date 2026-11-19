@@ -29,7 +29,7 @@ Ask a question the way you would ask a person ("Can I build right up to the edge
 | `clauses.jsonl` | the extracted clauses the demo searches |
 | `questions_part2.csv`, `questions_user20.csv` | the 45 + 20 evaluation questions with expected clauses |
 | `sources.json` | document title, authority, URL for each source |
-| `tests/` | 24 guardrail tests with fake model outputs, plus invented sample data |
+| `tests/` | 26 guardrail tests with fake model outputs, plus invented sample data |
 | `docs/` | how it works, evaluation protocol, one real example answer, case note |
 
 ## Live demo
@@ -41,7 +41,7 @@ Ask a question the way you would ask a person ("Can I build right up to the edge
 ```
 pip install -r requirements.txt
 GEMINI_API_KEY=your_key streamlit run app.py   # uses the included clauses.jsonl
-python tests/test_guardrails.py        # 24 guardrail checks, no key needed
+python tests/test_guardrails.py        # 26 guardrail checks, no key needed
 python eval.py questions.csv           # retrieval results
 GEMINI_API_KEY=your_key python eval_answers.py questions.csv
 ```
