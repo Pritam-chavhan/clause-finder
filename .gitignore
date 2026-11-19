@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+*.key
+*.pdf
+eval_details.csv
+answer_eval_details.csv
+clause_index.txt
+.DS_Store
