@@ -24,6 +24,8 @@ EXAMPLES = [
     ("🏗️", "Adding a floor", "Can I add another floor to my existing two-storey house?"),
     ("📏", "Distance from the neighbour", "How much space do I need to leave between my house and my neighbour's property?"),
     ("↔️", "Space at the back", "Do I need to leave open space at the back of my house, or is space on the sides enough?"),
+    ("🚿", "Bathroom or servant room", "Can I build a bathroom or servant room in the side open space of my house, and how big can it be?"),
+    ("🪜", "Staircase or water tank", "Can I build an open staircase or a water tank in the side open space of my house?"),
 ]
 
 st.set_page_config(page_title="Clause Finder · Gujarat building rules in plain words", page_icon="📐", layout="centered")
